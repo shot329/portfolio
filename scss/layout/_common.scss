@@ -1,0 +1,28 @@
+.cmn-title {
+  text-align: center;
+  .main {
+    font-size: 38px;
+  }
+  .border {
+    height: 1px;
+    background-color: cl(black);
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+  }
+  .sub {
+    font-size: 2rem;
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+.inner {
+  max-width: 1200px;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+  @include overTab {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}

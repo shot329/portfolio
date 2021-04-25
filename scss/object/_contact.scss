@@ -1,0 +1,52 @@
+.contact {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: cl(whitesmoke);
+  .sns {
+    padding-top: 50px;
+    .sns-list {
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+      margin: 0 auto;
+      @include overTab {
+        width: 40%;
+      }
+      .sns-icon {
+        .fab {
+          font-size: 5rem;
+          &:hover {
+            color: cl(aqua);
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+  .form {
+    width: 35%;
+    margin: 0 auto;
+    font-size: 2rem;
+    @include overTab {
+      width: 80%;
+    }
+    input,textarea {
+      display: block;
+      width: 100%;
+      margin-top: 36px;
+      padding: 0.6rem;
+      line-height: 1.8;
+      font-size: 1.8rem;
+    }
+    .btn {
+      display: block;
+      width: 50px;
+      height: 30px;
+      margin: 25px auto 0;
+      border-radius: 4px;
+      &:hover {
+        background-color: cl(aqua);
+      }
+    }
+  }
+}

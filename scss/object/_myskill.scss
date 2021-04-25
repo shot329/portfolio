@@ -1,0 +1,58 @@
+.myskill {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-image: url(../img/minatomirai.jpg);
+  background-size: cover;
+  background-position: center;
+  color: cl(white);
+  .cmn-title {
+    .border {
+      background-color: cl(white);
+    }
+  }
+  .webskills {
+    margin-top: 60px;
+    .webskill-list {
+      display: flex;
+      justify-content: space-between;
+      @include overTab {
+        display: block;
+      }
+      .webskill-item {
+        width: calc(25% - (8rem/4));
+        text-align: center;
+        @include overTab {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .webskill-title {
+          font-size: 2.4rem;
+        }
+        .fas,.fab {
+          padding: 32px 0;
+          font-size: 15rem;
+        }
+        .webskill-text {
+          padding: 24px 12px;
+          margin-top: 1rem;
+          background-color: rgba(0,0,0,0.6);
+          border-radius: 10px;
+          font-size: 1.6rem;
+          text-align: left;
+        }
+        .fa-code {
+          color: cl(blue);
+        }
+        .fa-sass {
+          color: cl(pink);
+        }
+        .fa-js-square {
+          color: cl(yellow);
+        }
+        .fa-wordpress {
+          color: cl(orange);
+        }
+      }
+    }
+  }
+}
