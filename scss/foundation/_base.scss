@@ -15,10 +15,10 @@ $colors: (
 );
 
 @function cl($key) {
-	@return map-get($colors, $key);// ★
+	@return map-get($colors, $key);
 }
 
-@mixin overTab {
+@mixin responsive {
 	@media print,screen and (max-width: 768px) {
 		@content;
 	}

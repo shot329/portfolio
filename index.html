@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShoTamura's Portfolio</title>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/recet.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./scss/style.css">
   <link rel="stylesheet" href="./css/animate.css">
   <link
@@ -23,21 +23,19 @@
   <!-- header -->
   <header class="header">
     <div class="header-contents">
-      <div class="header-logo">
-        <a class="header-link" href="#">
-          Sho T
-        </a>
-      </div>
-      <div class="header-nav">
+      <a class="header-logo" href="#">
+        Sho T
+      </a>
+      <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="header-link sp-nav" href="#about">about</a>
+            <a class="header-link sp-nav" href="#workout">workout</a>
           </li>
           <li class="nav-item">
             <a class="header-link sp-nav" href="#myskill">myskill</a>
           </li>
           <li class="nav-item">
-            <a class="header-link sp-nav" href="#workout">workout</a>
+            <a class="header-link sp-nav" href="#about">aboutme</a>
           </li>
           <li class="nav-item">
             <a class="header-link sp-nav" href="#service">service</a>
@@ -46,7 +44,7 @@
             <a class="header-link sp-nav" href="#contact">contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <button class="burger-btn">
         <span class="bar bar-top"></span>
         <span class="bar bar-mid"></span>
@@ -68,13 +66,13 @@
 
    <!-- workout -->
     <section class="workout" id="workout">
-      <div class="inner wow animate__animated animate__fadeIn" data-wow-offset="10">
+      <div class="inner">
         <h2 class="cmn-title wow animate__animated animate__fadeIn" data-wow-offset="10">
-          <span class="main">My workout</span>
+          <span class="main-title">My workout</span>
           <span class="border"></span>
-          <span class="sub">私の制作物の紹介です。</span>
+          <span class="sub-title">はじめまして！<br>最初に、私の制作物の紹介です。</span>
         </h2>
-        <div class="workout-contents wow animate__animated animate__fadeIn" data-wow-offset="10">
+        <div class="workout-contents">
           <ul class="workout-list">
             <li class="workout-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
               <a target="blank" href="https://shot329.github.io/Flowershop_shiro/">
@@ -98,34 +96,33 @@
 
     <!-- myskill -->
     <section class="myskill" id="myskill">
-      <div class="inner wow animate__animated animate__fadeIn" data-wow-offset="10">
+      <div class="inner">
         <h2 class="cmn-title wow animate__animated animate__fadeIn" data-wow-offset="10">
-          <span class="main">My skill</span>
+          <span class="main-title">My skill</span>
           <span class="border"></span>
-          <span class="sub">私のWebスキルの紹介です。</span>
+          <span class="sub-title">私のWebスキルの紹介です。</span>
         </h2>
-        
-        <div class="webskills wow animate__animated animate__fadeIn">
-          <ul class="webskill-list">
-            <li class="webskill-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-              <h3 class="webskill-title">HTML&CSS</h3>
+        <div class="myskill-contents">
+          <ul class="myskill-list">
+            <li class="myskill-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+              <h3 class="myskill-title">HTML&CSS</h3>
               <i class="fas fa-code"></i>
-              <p class="webskill-text">見やすいコード、SEOを意識したコーディングが得意です。 希望のデバイスに沿ったレスポンシブデザインも可能です。</p>
+              <p class="myskill-text">SEOを意識し、常に見やすいコーディングを心掛けます。希望のデバイスに沿ったレスポンシブデザインが可能です。</p>
             </li>
-            <li class="webskill-item wow animate__animated animate__fadeIn" data-wow-delay=".6s">
-              <h3 class="webskill-title">Sass</h3>
+            <li class="myskill-item wow animate__animated animate__fadeIn" data-wow-delay=".6s">
+              <h3 class="myskill-title">Sass</h3>
               <i class="fab fa-sass"></i>
-              <p class="webskill-text">CSSを拡張して扱いやすくしたスタイルシート「Sass」を使用し、より効率的なコーディングが可能です。</p>
+              <p class="myskill-text">CSSを拡張して扱いやすくしたスタイルシート「Sass」を使用し、より効率的なコーディングが可能です。</p>
             </li>
-            <li class="webskill-item wow animate__animated animate__fadeIn" data-wow-delay=".9s">
-              <h3 class="webskill-title">javascript</h3>
+            <li class="myskill-item wow animate__animated animate__fadeIn" data-wow-delay=".9s">
+              <h3 class="myskill-title">javascript</h3>
               <i class="fab fa-js-square"></i>
-              <p class="webskill-text">javascriptのライブラリであるjQueryを使い、アニメーションなどを実装しサイト全体に動きをつけることができます。</p>
+              <p class="myskill-text">javascriptのライブラリであるjQueryを使い、アニメーションなどを実装しサイト全体に動きをつけることができます。</p>
             </li>
-            <li class="webskill-item wow animate__animated animate__fadeIn" data-wow-delay="1.2s">
-              <h3 class="webskill-title">WordPress</h3>
+            <li class="myskill-item wow animate__animated animate__fadeIn" data-wow-delay="1.2s">
+              <h3 class="myskill-title">WordPress</h3>
               <i class="fab fa-wordpress"></i>
-              <p class="webskill-text">WordPressテーマ作成、メンテナンス、プラグインの設置など多岐に渡り知識があります。</p>
+              <p class="myskill-text">WordPressテーマ作成、メンテナンス、プラグインの設置など多岐に渡り知識があります。</p>
             </li>
           </ul>
         </div>
@@ -134,38 +131,38 @@
     
     <!-- aboutme -->
     <section class="about" id="about">
-      <div class="inner about-container wow animate__animated animate__fadeIn" data-wow-offset="10">
+      <div class="inner">
         <h2 class="cmn-title wow animate__animated animate__fadeIn" data-wow-offset="10">
-          <span class="main">About me</span>
+          <span class="main-title">About me</span>
           <span class="border"></span>
-          <span class="sub">簡単な自己紹介をさせていただきます。<br>Webエンジニアの田村翔です。</span>
+          <span class="sub-title">簡単な自己紹介をさせていただきます。<br>Webエンジニアの田村翔です。</span>
         </h2>
-        <ul class="about-contents  wow animate__animated animate__fadeIn" data-wow-offset="10">
+        <ul class="about-list">
           <li class="about-item wow animate__animated animate__fadeIn" data-wow-offset="10">
             <img src="./img/myphoto.jpg" alt="顔写真">
           </li>
           <li class="about-item wow animate__animated animate__fadeIn" data-wow-offset="10">
-            <div class="about-item-contents">
-              <h3 class="item-title">-Profile-</h3>
-              <ul class="text-items">
+            <div class="about-text1">
+              <h3 class="item-subtitle">-Profile-</h3>
+              <ul class="text-list">
                 <li class="text-item">慶應義塾大学商学部４年</li>
                 <li class="text-item">1999/03/29</li>
                 <li class="text-item">東京在住</li>
                 <li class="text-item">フリーランスWeb制作者</li>
               </ul>
-              <h3 class="sns">-SNS-</h3>
-              <ul class="sns-lists">
-                <li class="sns-list">
+              <h3 class="item-subtitle">-SNS-</h3>
+              <ul class="sns-list">
+                <li class="sns-item">
                   <a target="_blank" href="https://www.instagram.com/sho_t329/">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
-                <li class="sns-list">
+                <li class="sns-item">
                   <a target="_blank" href="https://www.facebook.com/profile.php?id=100029596025522">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </li>
-                <li class="sns-list">
+                <li class="sns-item">
                   <a target="_blank" href="https://twitter.com/Kakeru_Prog">
                     <i class="fab fa-twitter-square"></i>
                   </a>
@@ -177,15 +174,15 @@
             <img src="./img/zouzyoujimae.JPG" alt="">
           </li>
           <li class="about-item wow animate__animated animate__fadeIn" data-wow-offset="10">
-            <div class="about-texts">
-              <h3 class="item-title">-Background-</h3>
-              <ul class="text-items">
+            <div class="about-text2">
+              <h3 class="item-subtitle">-Background-</h3>
+              <ul class="text-list">
                 <li class="text-item">2017/03 <br class="sp-br">東京都市大学付属高等学校卒業</li>
                 <li class="text-item">2018/04 <br class="sp-br">慶應義塾大学商学部商学科入学</li>
                 <li class="text-item">2020/08~ <br class="sp-br">IT企業(自社開発)でインターン</li>
               </ul>
-              <h3 class="item-title">-Hobbys-</h3>
-              <ul class="text-items">
+              <h3 class="item-subtitle">-Hobbys-</h3>
+              <ul class="text-list">
                 <li class="text-item">フリースタイルバスケットボール</li>
                 <li class="text-item">音楽(カラオケ、ピアノ) 
                 </li>
@@ -201,14 +198,13 @@
     <section class="service" id="service">
       <div class="inner">
         <h2 class="cmn-title wow animate__animated animate__fadeIn" data-wow-offset="10">
-          <span class="main">Service</span>
+          <span class="main-title">Service</span>
           <span class="border"></span>
-          <span class="sub">※正式なお見積もりは、別途ご相談させていただきます。
+          <span class="sub-title">※正式なお見積もりは、別途ご相談させていただきます。
           </span>
         </h2>
-
-        <div class="service-contents  wow animate__animated animate__fadeIn" data-wow-offset="30">
-          <ul class="service-items">
+        <div class="service-contents wow animate__animated animate__fadeIn" data-wow-offset="30">
+          <ul class="service-list">
             <li class="service-item">
               <h3 class="item-title">HP、LP制作</h3>
               <i class="fas fa-laptop-code"></i>
@@ -225,8 +221,8 @@
               <p class="item-text">コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。</p>
               <ul class="price-list">
                 <li>【料金目安】</li>
-                <li>Wordpress移行: ¥100,000~</li>
-                <li>Wordpress制作: ¥200,000~</li>
+                <li>Wordpress移行: ¥50,000~</li>
+                <li>Wordpress制作: ¥100,000~</li>
               </ul>
             </li>
           </ul>
@@ -236,11 +232,11 @@
 
     <!-- contact -->
     <section class="contact" id="contact">
-      <div class="inner wow animate__animated animate__fadeIn" data-wow-offset="10">
+      <div class="inner">
         <h2 class="cmn-title wow animate__animated animate__fadeIn" data-wow-offset="10">
-          <span class="main">Contact</span>
+          <span class="main-title">Contact</span>
           <span class="border"></span>
-          <span class="sub">ご連絡(ご依頼)は以下のフォーム(SNSも可)からお願いします。
+          <span class="sub-title">ご連絡(ご依頼)は以下のフォーム(SNSも可)からお願いします。
           </span>
         </h2>
         <div class="sns wow animate__animated animate__fadeIn" data-wow-offset="10">
@@ -257,8 +253,6 @@
             </li>
           </ul>
         </div>
-
-        <!-- form -->
         <div class="form">
           <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSezFrz1qrfglJsiLY7D9Ga-3dI6RovZw1uSMx5vvxna5JLkgw/formResponse" method="post">
             <input type="text" name="entry.2005620554"  placeholder="Your Name">

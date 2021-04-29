@@ -1,80 +1,73 @@
 .about {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 10rem 0;
   background-color: cl(whitesmoke);
-  .about-container {
-    .about-contents {
-      margin-top: 60px;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      .about-item {
-        width: 50%;
-        @include overTab {
-          width: 100%;
-          margin-bottom: 10px;
+  .about-list {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .about-item {
+      width: 50%;
+      @include responsive {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+    .about-item:nth-child(2) {
+      .about-text1 {
+        text-align: center;
+        .item-subtitle {
+          margin-top: 1.5rem;
+          font-size: 2.6rem;
         }
-      }
-      .about-item:nth-child(1) {
-        text-align: right;
-      }
-      .about-item:nth-child(2) {
-        .about-item-contents {
-          text-align: center;
-          .item-title {
-            font-size: 2.6rem;
+        .text-list {
+          margin-top: 1rem;
+          .text-item {
+            font-size: 2rem;
+            line-height: 2;
           }
-          .text-items {
-            .text-item {
-              font-size: 2rem;
-              line-height: 2;
-            }
+        }
+        .sns-list {
+          display: flex;
+          justify-content: space-between;
+          width: 25%;
+          margin: 1rem auto 0;
+          @include responsive {
+            width: 50%;
           }
-          .sns {
-            font-size: 2.6rem;
-            padding-top: 20px;
-          }
-          .sns-lists {
-            display: flex;
-            justify-content: space-between;
-            width: 25%;
-            margin: 0 auto;
-            @include overTab {
-              width: 50%;
-            }
-            .sns-list {
-              font-size: 3.6rem;
-              i:hover {
-                color: cl(aqua);
-                transition: .3s;
-              }
+          .sns-item {
+            font-size: 3.6rem;
+            i:hover {
+              color: cl(aqua);
+              transition: .3s;
             }
           }
         }
       }
-      .about-item:nth-child(3) {
+    }
+    .about-item:nth-child(3) {
+      order: 4;
+    }
+    .about-item:nth-child(4) {
+      text-align: center;
+      @include responsive {
         order: 4;
       }
-      .about-item:nth-child(4) {
-        text-align: center;
-        @include overTab {
-          order: 4;
+      .about-text2 {
+        margin-left: auto;
+        .item-subtitle {
+          margin-top: 1rem;
+          font-size: 2.6rem;
         }
-        .about-texts {
-          margin-left: auto;
-          .item-title {
-            padding-top: 10px;
-            font-size: 2.6rem;
-          }
-          .text-items {
-            .text-item {
-              font-size: 2rem;
-              line-height: 2;
-              .sp-br {
-                display: none;
-                @include overTab {
-                  display: block;
-                }
+        .text-list {
+          margin-top: 1rem;
+          .text-item {
+            font-size: 2rem;
+            line-height: 2;
+            .sp-br {
+              display: none;
+              @include responsive {
+                display: block;
               }
             }
           }

@@ -1,6 +1,5 @@
 .myskill {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 10rem 0;
   background-image: url(../img/minatomirai.jpg);
   background-size: cover;
   background-position: center;
@@ -10,33 +9,33 @@
       background-color: cl(white);
     }
   }
-  .webskills {
-    margin-top: 60px;
-    .webskill-list {
+  .myskill-contents {
+    margin-top: 6rem;
+    .myskill-list {
       display: flex;
       justify-content: space-between;
-      @include overTab {
+      @include responsive {
         display: block;
       }
-      .webskill-item {
+      .myskill-item {
         width: calc(25% - (8rem/4));
         text-align: center;
-        @include overTab {
+        @include responsive {
           width: 100%;
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
         }
-        .webskill-title {
+        .myskill-title {
           font-size: 2.4rem;
         }
         .fas,.fab {
-          padding: 32px 0;
+          padding: 4.5rem 0;
           font-size: 15rem;
         }
-        .webskill-text {
-          padding: 24px 12px;
+        .myskill-text {
+          padding: 2.4rem 1.2rem;
           margin-top: 1rem;
           background-color: rgba(0,0,0,0.6);
-          border-radius: 10px;
+          border-radius: 1rem;
           font-size: 1.6rem;
           text-align: left;
         }

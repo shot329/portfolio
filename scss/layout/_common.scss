@@ -1,7 +1,7 @@
 .cmn-title {
   text-align: center;
-  .main {
-    font-size: 38px;
+  .main-title {
+    font-size: 3.8rem;
   }
   .border {
     height: 1px;
@@ -10,9 +10,9 @@
     display: block;
     margin: 0 auto;
   }
-  .sub {
+  .sub-title {
     font-size: 2rem;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: block;
   }
 }
@@ -21,7 +21,7 @@
   max-width: 1200px;
   padding: 0 1.6rem;
   margin: 0 auto;
-  @include overTab {
+  @include responsive {
     max-width: 100%;
     padding: 0 1rem;
   }

@@ -1,20 +1,20 @@
 .workout {
-  padding: 80px 0 70px;
+  padding: 10rem 0;
   background-color: cl(whitesmoke);
   .workout-contents {
-    margin-top: 60px;
+    margin-top: 6rem;
     .workout-list {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @include overTab {
+      @include responsive {
         display: block;
       }
       .workout-item {
         width: calc(33% - 2rem/3);
-        @include overTab {
+        @include responsive {
           width: 100%;
-          margin-bottom: 15px;
+          margin-bottom: 2rem;
         }
         &:hover {
           opacity: 0.7;
