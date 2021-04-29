@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -20,7 +19,6 @@ img {
 
 body.noscroll {
   overflow: hidden;
-  /* ★スクロールを固定できる。 */
 }
 
 .sp-br {
@@ -37,8 +35,8 @@ body.noscroll {
   text-align: center;
 }
 
-.cmn-title .main {
-  font-size: 38px;
+.cmn-title .main-title {
+  font-size: 3.8rem;
 }
 
 .cmn-title .border {
@@ -49,9 +47,9 @@ body.noscroll {
   margin: 0 auto;
 }
 
-.cmn-title .sub {
+.cmn-title .sub-title {
   font-size: 2rem;
-  margin-top: 20px;
+  margin-top: 2rem;
   display: block;
 }
 
@@ -70,12 +68,12 @@ body.noscroll {
 
 .footer {
   text-align: center;
-  padding: 8px;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .footer small {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .header {
@@ -91,15 +89,16 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 2rem;
 }
 
 .header .header-contents .header-logo {
   font-size: 2.6rem;
-  padding-left: 20px;
+  color: #fff;
 }
 
-.header .header-contents .header-logo .header-link {
-  color: #fff;
+.header .header-contents .header-nav {
+  margin-left: 1.8rem;
 }
 
 @media print, screen and (max-width: 768px) {
@@ -111,6 +110,7 @@ body.noscroll {
     width: 100%;
     height: 100vh;
     background-color: #282f35;
+    margin-left: 0;
   }
 }
 
@@ -138,16 +138,26 @@ body.noscroll {
 
 .header .header-contents .header-nav .nav-list .nav-item {
   font-size: 2.2rem;
-  padding-left: 18px;
+}
+
+.header .header-contents .header-nav .nav-list .nav-item:nth-child(n+2) {
+  margin-left: 2rem;
+}
+
+@media print, screen and (max-width: 768px) {
+  .header .header-contents .header-nav .nav-list .nav-item:nth-child(n+2) {
+    margin-left: 0;
+  }
 }
 
 @media print, screen and (max-width: 768px) {
   .header .header-contents .header-nav .nav-list .nav-item {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 }
 
 .header .header-contents .header-nav .nav-list .nav-item .header-link {
+  display: block;
   color: #fff;
 }
 
@@ -160,8 +170,8 @@ body.noscroll {
 .header .header-contents .burger-btn {
   display: none;
   position: absolute;
-  top: 17px;
-  right: 25px;
+  top: 1.7rem;
+  right: 2.5rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -254,13 +264,12 @@ body.noscroll {
 }
 
 .about {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 10rem 0;
   background-color: whitesmoke;
 }
 
-.about .about-container .about-contents {
-  margin-top: 60px;
+.about .about-list {
+  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,40 +280,36 @@ body.noscroll {
       flex-wrap: wrap;
 }
 
-.about .about-container .about-contents .about-item {
+.about .about-list .about-item {
   width: 50%;
 }
 
 @media print, screen and (max-width: 768px) {
-  .about .about-container .about-contents .about-item {
+  .about .about-list .about-item {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 }
 
-.about .about-container .about-contents .about-item:nth-child(1) {
-  text-align: right;
-}
-
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents {
+.about .about-list .about-item:nth-child(2) .about-text1 {
   text-align: center;
 }
 
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .item-title {
+.about .about-list .about-item:nth-child(2) .about-text1 .item-subtitle {
+  margin-top: 1.5rem;
   font-size: 2.6rem;
 }
 
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .text-items .text-item {
+.about .about-list .about-item:nth-child(2) .about-text1 .text-list {
+  margin-top: 1rem;
+}
+
+.about .about-list .about-item:nth-child(2) .about-text1 .text-list .text-item {
   font-size: 2rem;
   line-height: 2;
 }
 
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .sns {
-  font-size: 2.6rem;
-  padding-top: 20px;
-}
-
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .sns-lists {
+.about .about-list .about-item:nth-child(2) .about-text1 .sns-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,74 +317,78 @@ body.noscroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 25%;
-  margin: 0 auto;
+  margin: 1rem auto 0;
 }
 
 @media print, screen and (max-width: 768px) {
-  .about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .sns-lists {
+  .about .about-list .about-item:nth-child(2) .about-text1 .sns-list {
     width: 50%;
   }
 }
 
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .sns-lists .sns-list {
+.about .about-list .about-item:nth-child(2) .about-text1 .sns-list .sns-item {
   font-size: 3.6rem;
 }
 
-.about .about-container .about-contents .about-item:nth-child(2) .about-item-contents .sns-lists .sns-list i:hover {
+.about .about-list .about-item:nth-child(2) .about-text1 .sns-list .sns-item i:hover {
   color: #00ffff;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.about .about-container .about-contents .about-item:nth-child(3) {
+.about .about-list .about-item:nth-child(3) {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
 }
 
-.about .about-container .about-contents .about-item:nth-child(4) {
+.about .about-list .about-item:nth-child(4) {
   text-align: center;
 }
 
 @media print, screen and (max-width: 768px) {
-  .about .about-container .about-contents .about-item:nth-child(4) {
+  .about .about-list .about-item:nth-child(4) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
   }
 }
 
-.about .about-container .about-contents .about-item:nth-child(4) .about-texts {
+.about .about-list .about-item:nth-child(4) .about-text2 {
   margin-left: auto;
 }
 
-.about .about-container .about-contents .about-item:nth-child(4) .about-texts .item-title {
-  padding-top: 10px;
+.about .about-list .about-item:nth-child(4) .about-text2 .item-subtitle {
+  margin-top: 1rem;
   font-size: 2.6rem;
 }
 
-.about .about-container .about-contents .about-item:nth-child(4) .about-texts .text-items .text-item {
+.about .about-list .about-item:nth-child(4) .about-text2 .text-list {
+  margin-top: 1rem;
+}
+
+.about .about-list .about-item:nth-child(4) .about-text2 .text-list .text-item {
   font-size: 2rem;
   line-height: 2;
 }
 
-.about .about-container .about-contents .about-item:nth-child(4) .about-texts .text-items .text-item .sp-br {
+.about .about-list .about-item:nth-child(4) .about-text2 .text-list .text-item .sp-br {
   display: none;
 }
 
 @media print, screen and (max-width: 768px) {
-  .about .about-container .about-contents .about-item:nth-child(4) .about-texts .text-items .text-item .sp-br {
+  .about .about-list .about-item:nth-child(4) .about-text2 .text-list .text-item .sp-br {
     display: block;
   }
 }
 
 .workout {
-  padding: 80px 0 70px;
+  padding: 10rem 0;
   background-color: whitesmoke;
 }
 
 .workout .workout-contents {
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 
 .workout .workout-contents .workout-list {
@@ -407,7 +416,7 @@ body.noscroll {
 @media print, screen and (max-width: 768px) {
   .workout .workout-contents .workout-list .workout-item {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
   }
 }
 
@@ -418,8 +427,7 @@ body.noscroll {
 }
 
 .myskill {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 10rem 0;
   background-image: url(../img/minatomirai.jpg);
   background-size: cover;
   background-position: center;
@@ -430,11 +438,11 @@ body.noscroll {
   background-color: #fff;
 }
 
-.myskill .webskills {
-  margin-top: 60px;
+.myskill .myskill-contents {
+  margin-top: 6rem;
 }
 
-.myskill .webskills .webskill-list {
+.myskill .myskill-contents .myskill-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,59 +452,59 @@ body.noscroll {
 }
 
 @media print, screen and (max-width: 768px) {
-  .myskill .webskills .webskill-list {
+  .myskill .myskill-contents .myskill-list {
     display: block;
   }
 }
 
-.myskill .webskills .webskill-list .webskill-item {
+.myskill .myskill-contents .myskill-list .myskill-item {
   width: calc(25% - (8rem/4));
   text-align: center;
 }
 
 @media print, screen and (max-width: 768px) {
-  .myskill .webskills .webskill-list .webskill-item {
+  .myskill .myskill-contents .myskill-list .myskill-item {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 }
 
-.myskill .webskills .webskill-list .webskill-item .webskill-title {
+.myskill .myskill-contents .myskill-list .myskill-item .myskill-title {
   font-size: 2.4rem;
 }
 
-.myskill .webskills .webskill-list .webskill-item .fas, .myskill .webskills .webskill-list .webskill-item .fab {
-  padding: 32px 0;
+.myskill .myskill-contents .myskill-list .myskill-item .fas, .myskill .myskill-contents .myskill-list .myskill-item .fab {
+  padding: 4.5rem 0;
   font-size: 15rem;
 }
 
-.myskill .webskills .webskill-list .webskill-item .webskill-text {
-  padding: 24px 12px;
+.myskill .myskill-contents .myskill-list .myskill-item .myskill-text {
+  padding: 2.4rem 1.2rem;
   margin-top: 1rem;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  border-radius: 1rem;
   font-size: 1.6rem;
   text-align: left;
 }
 
-.myskill .webskills .webskill-list .webskill-item .fa-code {
+.myskill .myskill-contents .myskill-list .myskill-item .fa-code {
   color: #00bfff;
 }
 
-.myskill .webskills .webskill-list .webskill-item .fa-sass {
+.myskill .myskill-contents .myskill-list .myskill-item .fa-sass {
   color: #ff69b4;
 }
 
-.myskill .webskills .webskill-list .webskill-item .fa-js-square {
+.myskill .myskill-contents .myskill-list .myskill-item .fa-js-square {
   color: #ffff00;
 }
 
-.myskill .webskills .webskill-list .webskill-item .fa-wordpress {
+.myskill .myskill-contents .myskill-list .myskill-item .fa-wordpress {
   color: #ffa500;
 }
 
 .service {
-  padding: 80px 0 70px;
+  padding: 10rem 0;
   background-image: url(../img/minatomirai_1.jpg);
   background-size: cover;
   background-position: center;
@@ -508,10 +516,10 @@ body.noscroll {
 }
 
 .service .service-contents {
-  padding-top: 60px;
+  margin-top: 6rem;
 }
 
-.service .service-contents .service-items {
+.service .service-contents .service-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,58 +532,53 @@ body.noscroll {
 }
 
 @media print, screen and (max-width: 768px) {
-  .service .service-contents .service-items {
+  .service .service-contents .service-list {
     display: block;
   }
 }
 
-.service .service-contents .service-items .service-item {
+.service .service-contents .service-list .service-item {
   width: calc(50% - 6rem/2);
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
+  border-radius: 1.5rem;
   text-align: center;
-  padding: 10px;
+  padding: 5rem 0;
 }
 
 @media print, screen and (max-width: 768px) {
-  .service .service-contents .service-items .service-item {
+  .service .service-contents .service-list .service-item {
     width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 }
 
-.service .service-contents .service-items .service-item .item-title {
-  padding-top: 30px;
+.service .service-contents .service-list .service-item .item-title {
   font-size: 2.4rem;
 }
 
-.service .service-contents .service-items .service-item .fas, .service .service-contents .service-items .service-item .fab {
-  padding-top: 20px;
+.service .service-contents .service-list .service-item .fas, .service .service-contents .service-list .service-item .fab {
+  margin-top: 3rem;
   font-size: 5rem;
 }
 
-.service .service-contents .service-items .service-item .item-text {
-  padding-top: 20px;
+.service .service-contents .service-list .service-item .item-text {
   font-size: 2rem;
   width: 80%;
-  margin: 0 auto;
+  margin: 3rem auto;
   text-align: left;
 }
 
-.service .service-contents .service-items .service-item .price-list {
-  padding-top: 30px;
+.service .service-contents .service-list .service-item .price-list {
   font-size: 2rem;
 }
 
 .contact {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 10rem 0;
   background-color: whitesmoke;
 }
 
 .contact .sns {
-  padding-top: 50px;
+  margin-top: 5rem;
 }
 
 .contact .sns .sns-list {
@@ -620,18 +623,17 @@ body.noscroll {
 .contact .form input, .contact .form textarea {
   display: block;
   width: 100%;
-  margin-top: 36px;
-  padding: 0.6rem;
+  margin-top: 3.6rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   line-height: 1.8;
   font-size: 1.8rem;
 }
 
 .contact .form .btn {
   display: block;
-  width: 50px;
-  height: 30px;
-  margin: 25px auto 0;
-  border-radius: 4px;
+  margin: 2.5rem auto 0;
+  padding: 1rem;
+  border-radius: 0.4rem;
 }
 
 .contact .form .btn:hover {

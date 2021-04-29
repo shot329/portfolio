@@ -12,19 +12,18 @@ a {
   text-decoration: none;
 }
 
-// ★
 img {
   width: 100%;
   height: auto;
 }
 
 body.noscroll {
-  overflow: hidden;/* ★スクロールを固定できる。 */
+  overflow: hidden;
 }
 
 .sp-br {
   display: none;
-  @include overTab {
+  @include responsive {
     display: block;
   }
 }

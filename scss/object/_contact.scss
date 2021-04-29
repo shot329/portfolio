@@ -1,15 +1,14 @@
 .contact {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 10rem 0;
   background-color: cl(whitesmoke);
   .sns {
-    padding-top: 50px;
+    margin-top: 5rem;
     .sns-list {
       display: flex;
       justify-content: space-between;
       width: 15%;
       margin: 0 auto;
-      @include overTab {
+      @include responsive {
         width: 40%;
       }
       .sns-icon {
@@ -27,23 +26,22 @@
     width: 35%;
     margin: 0 auto;
     font-size: 2rem;
-    @include overTab {
+    @include responsive {
       width: 80%;
     }
     input,textarea {
       display: block;
       width: 100%;
-      margin-top: 36px;
-      padding: 0.6rem;
+      margin-top: 3.6rem;
+      padding: 0.5rem 0 0.5rem 0.5rem;
       line-height: 1.8;
       font-size: 1.8rem;
     }
     .btn {
       display: block;
-      width: 50px;
-      height: 30px;
-      margin: 25px auto 0;
-      border-radius: 4px;
+      margin: 2.5rem auto 0;
+      padding: 1rem;
+      border-radius: 0.4rem;
       &:hover {
         background-color: cl(aqua);
       }

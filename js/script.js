@@ -2,6 +2,7 @@ $(function() {
   new WOW().init();
 });
 
+// ハンバーガーメニュー
 $(function() {
   $('.burger-btn').click(function() {
     $(this).toggleClass('cross');
@@ -17,6 +18,7 @@ $(function() {
   }
 });
 
+// スクロール時のヘッダー
 $(function() {
   const headerHeight = 760;
   
@@ -24,21 +26,24 @@ $(function() {
     if ($(this).scrollTop() > headerHeight) {
       $('.header').addClass('bgcolor-change');
       $('.header-link').css('color', 'black');
+      $('.header-logo').css('color', 'black');
       $('.bar').css('background-color', 'black');
     } else {
       $('.header').removeClass('bgcolor-change');
       $('.header-link').css('color', 'white');
+      $('.header-logo').css('color', 'white');
       $('.bar').css('background-color', 'white');
     }
   });
 });
 
+// スライダー
 $(function() {
   $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 1500,
     speed: 1000,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
   });
 });
