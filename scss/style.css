@@ -97,6 +97,10 @@ body.noscroll {
   color: #fff;
 }
 
+.header .header-contents .header-logo:hover {
+  opacity: 0.8;
+}
+
 .header .header-contents .header-nav {
   margin-left: 1.8rem;
 }
@@ -148,6 +152,10 @@ body.noscroll {
   .header .header-contents .header-nav .nav-list .nav-item:nth-child(n+2) {
     margin-left: 0;
   }
+}
+
+.header .header-contents .header-nav .nav-list .nav-item:hover {
+  opacity: 0.8;
 }
 
 @media print, screen and (max-width: 768px) {
@@ -413,6 +421,12 @@ body.noscroll {
   width: calc(33% - 2rem/3);
 }
 
+.workout .workout-contents .workout-list .workout-item :hover {
+  opacity: 0.8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 @media print, screen and (max-width: 768px) {
   .workout .workout-contents .workout-list .workout-item {
     width: 100%;
@@ -420,10 +434,10 @@ body.noscroll {
   }
 }
 
-.workout .workout-contents .workout-list .workout-item:hover {
-  opacity: 0.7;
-  -webkit-transition: .3s;
-  transition: .3s;
+.workout .workout-contents .workout-list .workout-item p {
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .myskill {

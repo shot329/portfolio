@@ -12,13 +12,18 @@
       }
       .workout-item {
         width: calc(33% - 2rem/3);
+        :hover {
+          opacity: 0.8;
+          transition: .3s;
+        }
         @include responsive {
           width: 100%;
           margin-bottom: 2rem;
         }
-        &:hover {
-          opacity: 0.7;
-          transition: .3s;
+        p {
+          margin-top: 0.7rem;
+          text-align: center;
+          font-size: 1.8rem;
         }
       }
     }
