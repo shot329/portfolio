@@ -261,6 +261,16 @@ body.noscroll {
   }
 }
 
+.top .top-title span {
+  font-size: 3rem;
+}
+
+@media print, screen and (max-width: 768px) {
+  .top .top-title span {
+    font-size: 5vw;
+  }
+}
+
 .top img {
   -o-object-fit: cover;
      object-fit: cover;

@@ -12,6 +12,12 @@
     @include responsive {
       font-size: 15vw;
     }
+    span {
+      font-size: 3rem;
+      @include responsive {
+        font-size: 5vw;
+      }
+    }
   }
   img {
     object-fit: cover;
