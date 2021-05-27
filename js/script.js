@@ -12,9 +12,8 @@ $(function() {
   if ($(window).width() < 768) {
     $('.sp-nav').click(function() {
       $('.burger-btn').toggleClass('cross');
-      $('.header-nav').fadeToggle(300);
+      $('.header-nav').fadeOut();
     });
-
   }
 });
 
