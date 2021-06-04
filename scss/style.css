@@ -413,6 +413,8 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -448,6 +450,10 @@ body.noscroll {
   margin-top: 0.7rem;
   text-align: center;
   font-size: 1.8rem;
+}
+
+.workout .workout-contents .workout-list .workout-item:nth-child(n+4) {
+  margin-top: 4rem;
 }
 
 .myskill {
