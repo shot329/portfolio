@@ -5,6 +5,7 @@
     margin-top: 6rem;
     .workout-list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       @include responsive {
@@ -24,6 +25,9 @@
           margin-top: 0.7rem;
           text-align: center;
           font-size: 1.8rem;
+        }
+        &:nth-child(n+4) {
+          margin-top: 4rem;
         }
       }
     }
