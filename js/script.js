@@ -13,6 +13,7 @@ $(function() {
     $('.sp-nav').click(function() {
       $('.burger-btn').toggleClass('cross');
       $('.header-nav').fadeOut();
+      $('body').removeClass('noscroll');
     });
   }
 });
