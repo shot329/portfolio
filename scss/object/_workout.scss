@@ -24,7 +24,11 @@
         p {
           margin-top: 0.7rem;
           text-align: center;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
+          &:nth-child(2) {
+            font-size: 2rem;
+            font-weight: bold;
+          }
         }
         &:nth-child(n+4) {
           margin-top: 4rem;
