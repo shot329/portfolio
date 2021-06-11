@@ -27,7 +27,7 @@
             line-height: 2;
           }
         }
-        .sns-list {
+        .info-list {
           display: flex;
           justify-content: space-between;
           width: 25%;
@@ -35,7 +35,7 @@
           @include responsive {
             width: 50%;
           }
-          .sns-item {
+          .info-item {
             font-size: 3.6rem;
             i:hover {
               color: cl(aqua);
