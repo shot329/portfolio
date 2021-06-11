@@ -352,7 +352,7 @@ body.noscroll {
   line-height: 2;
 }
 
-.about .about-list .about-item:nth-child(2) .about-text1 .sns-list {
+.about .about-list .about-item:nth-child(2) .about-text1 .info-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,16 +364,16 @@ body.noscroll {
 }
 
 @media print, screen and (max-width: 768px) {
-  .about .about-list .about-item:nth-child(2) .about-text1 .sns-list {
+  .about .about-list .about-item:nth-child(2) .about-text1 .info-list {
     width: 50%;
   }
 }
 
-.about .about-list .about-item:nth-child(2) .about-text1 .sns-list .sns-item {
+.about .about-list .about-item:nth-child(2) .about-text1 .info-list .info-item {
   font-size: 3.6rem;
 }
 
-.about .about-list .about-item:nth-child(2) .about-text1 .sns-list .sns-item i:hover {
+.about .about-list .about-item:nth-child(2) .about-text1 .info-list .info-item i:hover {
   color: #00ffff;
   -webkit-transition: .3s;
   transition: .3s;
