@@ -23,7 +23,8 @@
         background-color: rgba(0,0,0,0.6);
         border-radius: 1.5rem;
         text-align: center;
-        padding: 5rem 0;
+        padding: 5rem 4rem;
+        box-sizing: border-box;
         @include responsive {
           width: 100%;
           margin-bottom: 1rem;
@@ -37,12 +38,13 @@
         }
         .item-text {
           font-size: 2rem;
-          width: 80%;
-          margin: 3rem auto;
+          margin: 3rem 0;
           text-align: left;
         }
         .price-list {
+          text-align: left;
           font-size: 2rem;
+          line-height: 3.8rem;
         }
       }
     }
