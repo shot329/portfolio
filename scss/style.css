@@ -602,7 +602,9 @@ body.noscroll {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1.5rem;
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media print, screen and (max-width: 768px) {
@@ -623,13 +625,14 @@ body.noscroll {
 
 .service .service-contents .service-list .service-item .item-text {
   font-size: 2rem;
-  width: 80%;
-  margin: 3rem auto;
+  margin: 3rem 0;
   text-align: left;
 }
 
 .service .service-contents .service-list .service-item .price-list {
+  text-align: left;
   font-size: 2rem;
+  line-height: 3.8rem;
 }
 
 .contact {
